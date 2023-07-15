@@ -839,21 +839,124 @@ footer .copyright{
 }
 
 
+/* Cart page */
+
+#cart_section{
+    overflow-x: auto;
+}
 
 
+#cart_section table{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
 
 
+#cart_section table img{
+    width: 70px;
+}
+
+#cart_section table td:nth-child(1){
+    width: 100px;
+    text-align: center;
+}
+
+#cart_section table td:nth-child(2){
+    width: 150px;
+    text-align: center;
+}
+
+#cart_section table td:nth-child(3){
+    width: 250px;
+    text-align: center;
+}
+
+#cart_section table td:nth-child(4),
+#cart_section table td:nth-child(5),
+#cart_section table td:nth-child(6){
+    width: 150px;
+    text-align: center;
+}
 
 
+#cart_section table td:nth-child(5) input{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart_section table thead{
+    border: 1px solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+#cart_section table thead td{
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 18px 0;
+}
+
+#cart_section table tbody tr td{
+    padding-top: 15px;
+}
+
+#cart_section table tbody td{
+    font-size: 13px;
+}
+
+#cart_coupon_total_section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
+#cart_coupon{
+    width: 50%;
+    margin-bottom: 30px;
+}
 
+#cart_coupon h3,
+#total h3{
+    padding-bottom: 15px;
+}
+#cart_coupon input{
+    padding: 10px 20px;
+    outline: none;
+    width: 60%;
+    margin-right: 10px;
+    border: 1px solid #e2e9e1;
+}
 
+#cart_coupon button,
+#total button{
+    background-color: #088178;
+    color: #fff;
+    padding: 12px 20px;
+}
 
+#total{
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
 
+#total table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
 
-
-
+#total table td{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 14px;
+}
 
 
 
@@ -1101,5 +1204,17 @@ footer .copyright{
     #form_details form{
         width: 100%;
         margin-bottom: 30px;
+    }
+
+    /* cart page */
+    #cart_coupon_total_section {
+        flex-direction: column;
+    }
+    #cart_coupon {
+        width: 100%;
+    }
+    #total {
+        width: 100%;
+        padding: 20px;
     }
 }
