@@ -975,6 +975,12 @@ footer .copyright{
         padding: 40px 40px;
     }
 
+    .logo{
+        width: 50%;
+        height: 50%;
+    }
+
+
     #navbar {
         display: flex;
         flex-direction: column;
@@ -1078,6 +1084,10 @@ footer .copyright{
 
     #header {
         padding: 10px 30px;
+    }
+    .logo{
+        width: 50%;
+        height: 50%;
     }
 
     h1{
