@@ -76,7 +76,7 @@
 /* home page */
 /* me parece muy chevere esta manera de poner el background */
 #hero{
-    background-image: url("./images/background_image_hero_section.png");
+    background-image: url("./images/hero_image.jpg");
     height: 90vh;
     width: 100%;
     background-size: cover;
@@ -1099,7 +1099,7 @@ footer .copyright{
 
     #hero {
         padding: 0 20px;
-        background-position: 55%;
+        background-position: 5%;
     }
 
     #features .fe-box {
