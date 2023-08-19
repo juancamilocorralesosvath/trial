@@ -7,6 +7,15 @@
     box-sizing: border-box;
     font-family: 'Spartan', sans-serif;
 }
+/* title font */
+@font-face {
+    font-family: 'Fabio';
+    src: url('Amagro.ttf');
+    font-weight: normal;
+    font-style: normal;
+/* url('Amagro.ttf') format('ttf'), */
+}
+/* ----- */
 /* header start */
 #header{
     display: flex;
@@ -81,36 +90,52 @@
 /* home page */
 /* me parece muy chevere esta manera de poner el background */
 #hero{
-    background-image: url("./images/lake_mountain.jpg");
+    /* background-image: url("./images/lake_mountain.jpg"); */
+    background-image: url("./images/backgrounds/bg-pacifica-2_water.png");
     height: 90vh;
     width: 100%;
     background-size: cover;
-    background-position: top 25% right 0;
-    padding: 0 80px;
+    background-color: #000;
+   /*  background-position: center; */
+    /* background-size: 100% 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+/*     background-repeat: no-repeat;
+    background-position:left; */
+    /* padding: 0 80px; */
     display: flex;
     flex-direction: column;
-   /*  align-items: flex-start; */
-    justify-content: center;
     align-items: center;
+    /* justify-content: flex-end; */
+    justify-content: center;
+    /* background-position: center; */
+    /* background-position:  right 1em bottom 10em; */
 }
 #hero h4{
     padding-bottom: 15px;
 }
 #hero h1{
+    font-family: 'Fabio';
     /* color: #088178; */
     font-weight:900;
-    font-size: 100px;
-    color: #fff;
+    font-size: 80px;
+    color: black;
+    color: #E3E6F3;
 /*     background-color: #ffffff77;
     border-radius: 30px; */
 }
 
 #hero h2{
     color: #fff;
+    font-family: 'Fabio';
 }
 
 #hero p{
     color: #fff;
+    font-family: 'Fabio';
+    color: #000;
+    font-size: 20px;
+    font-weight:900;
 }
 /* no tenia idea! el efecto del boton era en realidad una imagen! */
 #hero button{
@@ -125,6 +150,17 @@
     font-weight: 700;
     font-size: 16px;
 }
+
+.normal_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+/* .normal_text h1{
+    text-align: center;
+} */
 /* features */
 .section-p1{
     padding: 40px 80px;
@@ -381,7 +417,8 @@ sencilla a la cantidad de elementos hijos que en este caso son los h6 */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    background-image: url("./images/banner/b_3.jpg");
+    /* background-image: url("./images/banner/b_3.jpg"); */
+    background-image: url("./images/lake_mountain.jpg");
     min-width: 30%;
     height: 30vh;
     background-size: cover;
@@ -1103,12 +1140,30 @@ footer .copyright{
     .logo{
         width: 50%;
       }
+
+    #hero{
+        /* padding: 10px 20px; */
+        /* justify-content: flex-start; */
+/*         background-size: cover;
+        background-position: top 25% right 0; */
+        background-position: center;
+    }
+
     #hero h1{
         /* color: #088178; */
-        font-weight:900;
+        font-weight:100;
         font-size: 50px;
         color: #fff;
+        color: black;
+        color: #E3E6F3;
         text-align: center;
+    }
+
+    #hero p{
+        /* color: #088178; */
+        font-size: 15px;
+        color: #fff;
+        color: rgb(36, 224, 36);
     }
 
     #header {
@@ -1120,11 +1175,6 @@ footer .copyright{
     }
     h2{
         font-size: 32px;
-    }
-
-    #hero {
-        padding: 10px 20px;
-        background-position: 5%;
     }
 
     #features .fe-box {
