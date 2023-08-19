@@ -1,7 +1,0 @@
-- En cada una de las vistas, modificar la navbar como en 
-el home screen. ✅
-- Add a favicon ✅
-- shop:
-- blog:
-- about: 
-- contact: 
