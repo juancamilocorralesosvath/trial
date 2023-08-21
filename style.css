@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan&display=swap');
 
-/* que haran el margin, padding y box-sizing en este caso? */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Spartan', sans-serif;
+/* elegant font */
+@font-face {
+    font-family: 'elegant';
+    src: url('AlexBrush-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
 }
+
 /* title font */
 @font-face {
     font-family: 'Fabio';
@@ -15,6 +16,20 @@
     font-style: normal;
 /* url('Amagro.ttf') format('ttf'), */
 }
+/* que haran el margin, padding y box-sizing en este caso? */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+* h1{
+    font-family: 'Fabio';
+    margin-bottom: 20px;
+}
+
+
 /* ----- */
 /* header start */
 #header{
@@ -33,6 +48,10 @@
     left: 0;
 }
 
+#header h3{
+    font-family: 'Fabio';
+}
+
 .logo{
     width: 28%;
 }
@@ -42,6 +61,7 @@
     align-items: center;
     justify-content: center;
 } 
+
 /* para remover los bullets y darles espacio */
 #navbar li{
     list-style: none;
@@ -91,52 +111,52 @@
 /* me parece muy chevere esta manera de poner el background */
 #hero{
     /* background-image: url("./images/lake_mountain.jpg"); */
-    background-image: url("./images/backgrounds/bg-pacifica-2_water.png");
-    height: 90vh;
-    width: 100%;
+    height: 50vh;
+    width: 100vw;
+    /* 
     background-size: cover;
-    background-color: #000;
-   /*  background-position: center; */
-    /* background-size: 100% 100%; */
     background-position: center;
-    background-repeat: no-repeat;
-/*     background-repeat: no-repeat;
-    background-position:left; */
-    /* padding: 0 80px; */
+    background-repeat: no-repeat; 
+    */
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+#hero video{
+
+    position: absolute;
+    min-width: 100%;
+    height: 50%;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+#hero .content{
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: flex-end; */
-    justify-content: center;
-    /* background-position: center; */
-    /* background-position:  right 1em bottom 10em; */
 }
-#hero h4{
-    padding-bottom: 15px;
-}
-#hero h1{
+
+
+#hero .content h1{
     font-family: 'Fabio';
-    /* color: #088178; */
+    color: #088178;
     font-weight:900;
-    font-size: 80px;
-    color: black;
-    color: #E3E6F3;
-/*     background-color: #ffffff77;
-    border-radius: 30px; */
+    font-size: 60px;
 }
 
-#hero h2{
+#hero .content h2{
     color: #fff;
-    font-family: 'Fabio';
-}
-
-#hero p{
-    color: #fff;
-    font-family: 'Fabio';
     color: #000;
-    font-size: 20px;
-    font-weight:900;
+    font-family: 'elegant';
 }
+
+
 /* no tenia idea! el efecto del boton era en realidad una imagen! */
 #hero button{
     background-image: url("./images/button.png");
@@ -157,10 +177,14 @@
     align-items: center;
     margin-top: 20px;
     margin-bottom: 30px;
-}
-/* .normal_text h1{
     text-align: center;
-} */
+    text-align: justify;
+}
+
+.normal_text h1{
+    font-family: 'elegant';
+}
+
 /* features */
 .section-p1{
     padding: 40px 80px;
@@ -424,7 +448,8 @@ sencilla a la cantidad de elementos hijos que en este caso son los h6 */
     background-size: cover;
     background-position: center;
     padding: 20px;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 #banner3 .banner3-banner-box-2{
@@ -1142,30 +1167,49 @@ footer .copyright{
       }
 
     #hero{
-        /* padding: 10px 20px; */
-        /* justify-content: flex-start; */
-/*         background-size: cover;
-        background-position: top 25% right 0; */
+        /* background-image: url("./images/lake_mountain.jpg"); */
+        height: 65vh;
+        width: 100%;
+        /* 
+        background-size: cover;
         background-position: center;
+        background-repeat: no-repeat; 
+        */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-
-    #hero h1{
-        /* color: #088178; */
-        font-weight:100;
-        font-size: 50px;
-        color: #fff;
-        color: black;
-        color: #E3E6F3;
+    
+    #hero video{
+        position: relative;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    
+    #hero .content{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
-
-    #hero p{
-        /* color: #088178; */
-        font-size: 15px;
-        color: #fff;
-        color: rgb(36, 224, 36);
+    
+    
+    #hero .content h1{
+        font-family: 'Fabio';
+        color: #088178;
+        font-weight:900;
+        font-size: 40px;
     }
-
+    
+    #hero .content h2{
+        color: #fff;
+        color: #000;
+        font-family: 'elegant';
+        font-size: 35px;
+    }
+    
     #header {
         padding: 10px 30px;
     }

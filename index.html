@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
     <link rel="shortcut icon" href="./images/pacifica_favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -31,71 +32,63 @@
     </section>
 
     <section id="hero" >
-        <!-- <h2>Pacifica</h2> -->
-        <h1>Exquisite water</h1>
-        <p>Life goes on &trade;</p>
-        <!-- <button>Shop Now!</button> -->
+        <video 
+            autoplay 
+            muted 
+            loop 
+            src="./images/backgrounds/bg_video.mp4"
+        >
+        </video>
+
+        <div class="content">
+            <h1>Exquisite water</h1>
+            <h2>Life goes on &trade;</h2>
+        </div>
     </section>
 
-<!--     <section id="features" class="section-p1">
-        <div class="fe-box">
-            <img src="./images/f1.png" alt="">
-            <h6>Free Shipping</h6>
-        </div>
-        <div class="fe-box">
-            <img src="./images/f2.png" alt="">
-            <h6>Online Order</h6>
-        </div>
-        <div class="fe-box">
-            <img src="./images/f3.png" alt="">
-            <h6>Save Money</h6>
-        </div>
-        <div class="fe-box">
-            <img src="./images/f4.png" alt="">
-            <h6>Promotions</h6>
-        </div>
-        <div class="fe-box">
-            <img src="./images/f5.png" alt="">
-            <h6>Happy Sell</h6>
-        </div>
-        <div class="fe-box">
-            <img src="./images/f6.png" alt="">
-            <h6>24/7 Support </h6>
-        </div>
-    </section> -->
-
     <section class="section-p1 normal_text">
-        <h1>Know us</h1>
-        <p>Pacifica Water Company was founded in 2021 by Carlos Saldana, an experienced entrepreneur and Water Sommelier from the US. Carlos is one of only a few certified water sommeliers around the world.</p>
+        <h1>Water as it has to be</h1>
+        <p>The water begins its journey flirting with the clouds, near the upper reaches of the Andes Mountains.</p>
     </section>
 
     <section id="sm-banner" class="section-p1">
-        <div class="banner-box">
-            <h4>The best of the best</h4>
+        <div data-aos="slide-right" data-aos-duration="1000"  data-aos-once="false" data-aos-mirror="true" class="banner-box">
+            
             <h2>Finest Quality</h2>
-            <span>Glass-only</span>
+            
             <button class="white" >Learn More</button>
         </div>
-        <div class="banner-box banner-box-2">
-            <h4>Spring / Summer</h4>
-            <h2>Upcoming season</h2>
-            <span>Himalayan water</span>
+
+    <section class=" normal_text">
+        <h1>Discover our water</h1>
+        <p>Find out where our natural mineral water comes from, shaping the unique taste and properties it brings to the table.</p>
+    </section>
+
+        <div data-aos="slide-left" data-aos-duration="1000"  data-aos-once="false" data-aos-mirror="true" class="banner-box banner-box-2">
+            
+            <h2>Exclusive Natural Mineral Water</h2>
+            
             <button class="white" >I want it</button>
         </div>
     </section>
 
+    <section class="section-p1 normal_text">
+        <h1>The taste of thousands of years</h1>
+        <p>One of the most remarkable water features of the Andes is Colico Lake in Chile, which is fed by a natural stream from the foothills of the mountains. The lake has clear and pure water that reflects the beauty of the surrounding landscape. The stream originates near the Llaima Volcano, one of the most active volcanoes in Chile. The water is so pristine that it is bottled and sold as Andes Mountain Water, a fine bottled water that claims to have a balanced mineral composition and a refreshing taste.</p>
+    </section>
+
     <section id="banner3" >
-        <div class="banner-box">
-            <h2>MOMENTUM</h2>
-            <h3>Winter</h3>
+        <div data-aos="fade-up-right" data-aos-duration="1000"  data-aos-once="false" data-aos-mirror="true" class="banner-box">
+            <h2>Beautiful</h2>
+            <h3>landscapes shape our lifes</h3>
         </div>
-        <div class="banner-box banner3-banner-box-2">
-            <h2>NEW COLLECTION</h2>
-            <h3>Winter</h3>
+        <div data-aos="fade-down-left" data-aos-duration="1000"  data-aos-once="false" data-aos-mirror="true" class="banner-box banner3-banner-box-2">
+            <h2>Astonishing</h2>
+            <h3>presentations and bottles.</h3>
         </div>
-        <div class="banner-box banner3-banner-box-3">
+        <div data-aos="zoom-out" data-aos-duration="1000"  data-aos-once="false" data-aos-mirror="true" class="banner-box banner3-banner-box-3">
             <h2>SEA WATER</h2>
-            <h3>Beautiful</h3>
+            <h3>and many other crafts of nature.</h3>
         </div>
     </section>
 
@@ -131,32 +124,10 @@
 
         <div class="col">
             <h4>About</h4>
-            <a href="#">About us</a>
-            <a href="#">Delivery information</a>
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms & conditions</a>
-            <a href="#">Contact us</a>
+            <a href="about.html">About us</a>
+            <a href="contact.html">Contact us</a>
         </div>
 
-        <div class="col">
-            <h4>My Account</h4>
-            <a href="#">Sign in</a>
-            <a href="#">View cart</a>
-            <a href="#">My wishlist</a>
-            <a href="#">Track my order</a>
-            <a href="#">Help</a>
-        </div>
-
-        <div class="col install">
-            <h4>Install app</h4>
-            <p>App store or Google Play</p>
-            <div class="row">
-                <img src="./images/pay/app.jpg" alt="">
-                <img src="./images/pay/play.jpg" alt="">
-            </div>
-            <p>Secured Payment Gateways</p>
-            <img src="./images/pay/pay.png" alt="">
-        </div>
 
         <div class="copyright">
             <p>©2023</p>
@@ -167,5 +138,9 @@
 
     
 <script src="./index.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
