@@ -1157,16 +1157,10 @@ footer .copyright{
     .logo{
         width: 50%;
       }
-
+/* 
     #hero{
-        /* background-image: url("./images/lake_mountain.jpg"); */
         height: 65vh;
         width: 100%;
-        /* 
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat; 
-        */
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -1186,8 +1180,17 @@ footer .copyright{
         align-items: center;
         text-align: center;
     }
+     */
+
+    #hero {
+        width: 100vw;
+        height: 50vh;
+    }
     
-    
+    #hero video {
+        object-fit: cover;
+        width: 50%;
+    }
     #hero .content h1{
         font-family: 'Spartan', sans-serif;
         color: #000;
