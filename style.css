@@ -108,16 +108,9 @@
 }
 
 /* home page */
-/* me parece muy chevere esta manera de poner el background */
 #hero{
-    /* background-image: url("./images/lake_mountain.jpg"); */
     height: 50vh;
     width: 100vw;
-    /* 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat; 
-    */
     display: flex;
     align-items: center; 
     justify-content: center;
@@ -1197,15 +1190,14 @@ footer .copyright{
     
     
     #hero .content h1{
-        font-family: 'Fabio';
-        color: #088178;
+        font-family: 'Spartan', sans-serif;
+        color: #000;
         font-weight:900;
-        font-size: 40px;
+        font-size: 50px;
     }
     
     #hero .content h2{
-        color: #fff;
-        color: #000;
+        color: #088178;
         font-family: 'elegant';
         font-size: 35px;
     }
